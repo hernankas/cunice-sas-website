@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -14,15 +14,23 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
+            background-image: url('fondo.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
         }
         header {
-            background-color: #007bff;
+            background-color: rgba(0, 123, 255, 0.8);
             color: white;
             padding: 20px;
             text-align: center;
         }
         section {
             padding: 40px 0;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparente para ver el fondo */
         }
         footer {
             background-color: #343a40;
@@ -36,25 +44,6 @@
         }
         .navbar {
             margin-bottom: 20px;
-        }
-        /* Ajustes para eliminar espacio en blanco */
-        #integrantes {
-            margin-bottom: 0;
-        }
-        #video {
-            padding-top: 0;
-        }
-        /* Ajustes para imágenes */
-        #nosotros img {
-            width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
-            height: auto; /* Mantiene la proporción de la imagen */
-            display: block; /* Asegura que no haya espacio adicional alrededor de la imagen */
-        }
-        /* Ajuste para la columna de texto */
-        #nosotros .col-md-6:first-child {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
         }
     </style>
 </head>
