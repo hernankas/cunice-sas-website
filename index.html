@@ -19,144 +19,111 @@
         header {
             background-color: #444;
             color: #fff;
-            padding: 20px 0;
             text-align: center;
-            font-size: 2em;
-            text-transform: uppercase;
-            letter-spacing: 3px;
+            padding: 20px;
         }
 
-        /* Estilo del menú de navegación */
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            background-color: #333; /* Fondo oscuro para todo el menú */
+        /* Estilo de los menús de navegación */
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
         }
 
-        nav ul li {
-            margin: 0 20px; /* Aumentar el margen entre elementos del menú */
-        }
-
-        nav ul li a {
-            color: #FFFFFF; /* Color blanco para texto */
+        nav a {
+            color: #fff;
+            margin: 0 15px;
             text-decoration: none;
-            font-size: 1.2em;
-            padding: 10px 20px;
-            display: block;
-            transition: background-color 0.3s, color 0.3s;
-            background-color: #333; /* Fondo oscuro para enlaces */
-            opacity: 1; /* Eliminar transparencia del menú */
+            font-weight: bold;
         }
 
-        nav ul li a:hover {
-            background-color: #FFD700; /* Fondo dorado al pasar el ratón */
-            color: #333; /* Texto oscuro sobre el fondo dorado */
+        nav a:hover {
+            text-decoration: underline;
         }
 
         /* Estilo de las secciones */
         section {
-            padding: 40px 20px;
-            margin: 20px auto;
-            max-width: 1000px;
+            padding: 20px;
+            margin: 10px;
             background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
 
-        section h2 {
-            color: #444;
-            font-size: 2.2em; /* Aumentar tamaño de título */
-            margin-bottom: 15px;
-            border-bottom: 2px solid #444;
-            padding-bottom: 10px;
-            text-transform: uppercase;
+        /* Estilo del banner */
+        .banner {
+            text-align: center;
         }
 
-        section p, section ul {
-            font-size: 1.1em;
-            line-height: 1.6;
-            margin-bottom: 20px;
+        .banner img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
         }
 
         /* Estilo del pie de página */
         footer {
+            text-align: center;
             background-color: #444;
             color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            font-size: 1em;
-            position: relative;
-            width: 100%;
-            bottom: 0;
-        }
-
-        /* Espaciado entre las secciones */
-        .section-spacing {
-            margin-top: 40px;
+            padding: 20px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
 
-<header>
-    Cunice S.A.S.
-</header>
+    <!-- Encabezado -->
+    <header>
+        <h1>Cunice S.A.S.</h1>
+    </header>
 
-<nav>
-    <ul>
-        <li><a href="#vision">Visión y Misión</a></li>
-        <li><a href="#portafolio">Portafolio de Servicios</a></li>
-        <li><a href="#video">Video Promocional</a></li>
-        <li><a href="#banner">Banner Publicitario</a></li>
-        <li><a href="#integrantes">Integrantes</a></li> <!-- Agregado -->
-    </ul>
-</nav>
+    <!-- Barra de navegación -->
+    <nav>
+        <a href="#vision">Visión y Misión</a>
+        <a href="#servicios">Portafolio de Servicios</a>
+        <a href="#banner">Banner Publicitario</a>
+        <a href="#integrantes">Integrantes</a>
+    </nav>
 
-<section id="vision">
-    <h2>Visión y Misión</h2>
-    <p><strong>Visión:</strong> Ser la empresa líder en asesoramiento gerencial en Colombia, reconocida por su enfoque personalizado y su compromiso con el desarrollo integral de los procesos administrativos y el crecimiento de los equipos humanos.</p>
-    <p><strong>Misión:</strong> Ofrecer servicios de consultoría y capacitación gerencial, proporcionando soluciones estratégicas que mejoren la eficiencia y productividad de nuestros clientes, adaptándonos a sus necesidades particulares.</p>
-</section>
+    <!-- Sección de Visión y Misión -->
+    <section id="vision">
+        <h2>VISIÓN Y MISIÓN</h2>
+        <p><strong>Visión:</strong> Ser la empresa líder en asesoramiento gerencial en Colombia, reconocida por su enfoque personalizado y su compromiso con el desarrollo integral de los procesos administrativos y el crecimiento de los equipos humanos.</p>
+        <p><strong>Misión:</strong> Ofrecer servicios de consultoría y capacitación gerencial, proporcionando soluciones estratégicas que mejoren la eficiencia y productividad de nuestros clientes, adaptándonos a sus necesidades particulares.</p>
+    </section>
 
-<section id="portafolio" class="section-spacing">
-    <h2>Portafolio de Servicios</h2>
-    <ul>
-        <li>Asesoramiento gerencial</li>
-        <li>Capacitación y reinducción de personal</li>
-        <li>Optimización de procesos administrativos</li>
-        <li>Mejoramiento continuo</li>
-    </ul>
-</section>
+    <!-- Sección del Portafolio de Servicios -->
+    <section id="servicios">
+        <h2>PORTAFOLIO DE SERVICIOS</h2>
+        <ul>
+            <li>Asesoramiento gerencial</li>
+            <li>Capacitación y reinducción de personal</li>
+            <li>Optimización de procesos administrativos</li>
+            <li>Mejoramiento continuo</li>
+        </ul>
+    </section>
 
-<section id="video" class="section-spacing">
-    <h2>Video Promocional</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/tu_video" frameborder="0" allowfullscreen></iframe>
-</section>
+    <!-- Sección del Banner Publicitario -->
+    <section id="banner" class="banner">
+        <h2>BANNER PUBLICITARIO</h2>
+        <a href="https://cdigital.cun.edu.co" target="_blank">
+            <img src="cun.png" alt="Banner Publicitario">
+        </a>
+        <p>Promocionamos nuestro servicio de capacitación de personal, diseñado para mejorar el rendimiento y la productividad de tu equipo.</p>
+    </section>
 
-<section id="banner" class="section-spacing">
-    <h2>Banner Publicitario</h2>
-    <a href="https://cdigital.cun.edu.co/" target="_blank">
-        <img src="cun.png" alt="Banner Publicitario" style="width:100%; height:auto; border-radius: 8px;">
-    </a>
-    <p>Promocionamos nuestro servicio de capacitación de personal, diseñado para mejorar el rendimiento y la productividad de tu equipo.</p>
-</section>
+    <!-- Sección de Integrantes -->
+    <section id="integrantes">
+        <h2>INTEGRANTES</h2>
+        <ul>
+            <li>ESTUDIANTE: HERNAN ROSENDO CASTRO GALEANO INFORMATICA Y CONVERGENCIA TECNOLOGICA/52215/SEGUNDO BLOQUE/24V04 - Rol</li>
+        </ul>
+    </section>
 
-<section id="integrantes" class="section-spacing">
-    <h2>Integrantes</h2>
-    <ul>
-        <li>ESTUDIANTE: HERNAN ROSENDO CASTRO GALEANO 
-INFORMATICA Y CONVERGENCIA TECNOLOGICA/52215/SEGUNDO BLOQUE/24V04 - Rol</li>
-       
-        <!-- Agrega más integrantes según sea necesario -->
-    </ul>
-</section>
-
-<footer>
-    Cunice S.A.S. | Calle 17 con carrera 4ta, Bogotá
-</footer>
+    <!-- Pie de página -->
+    <footer>
+        Cunice S.A.S. | Calle 17 con carrera 4ta, Bogotá
+    </footer>
 
 </body>
 </html>
