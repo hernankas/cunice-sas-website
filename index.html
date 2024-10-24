@@ -3,125 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Cunice S.A.S.</title>
+    <meta name="description" content="Cunice S.A.S. ofrece asesoramiento empresarial y capacitaciones gerenciales en Bogotá.">
+    <meta name="keywords" content="asesoramiento empresarial, capacitaciones, mejora de procesos, Bogotá">
+    <meta name="author" content="Cunice S.A.S.">
+    <title>Cunice S.A.S. - Asesoramiento Empresarial</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* Estilo general del cuerpo */
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 0;
+            font-family: 'Roboto', sans-serif;
         }
-
-        /* Estilo del encabezado */
         header {
-            background-color: #444;
-            color: #fff;
-            text-align: center;
+            background-color: #007bff;
+            color: white;
             padding: 20px;
+            text-align: center;
         }
-
-        /* Estilo de los menús de navegación */
-        nav {
-            background-color: #333;
+        section {
+            padding: 40px 0;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
             padding: 10px;
             text-align: center;
         }
-
-        nav a {
-            color: #fff;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        /* Estilo de las secciones */
-        section {
-            padding: 20px;
-            margin: 10px;
-            background-color: #fff;
-            border-radius: 10px;
-        }
-
-        /* Estilo del banner */
-        .banner {
-            text-align: center;
-        }
-
-        .banner img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        /* Estilo del pie de página */
-        footer {
-            text-align: center;
-            background-color: #444;
-            color: #fff;
-            padding: 20px;
-            margin-top: 20px;
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
         }
     </style>
 </head>
 <body>
 
-    <!-- Encabezado -->
+    <!-- Header -->
     <header>
-        <h1>Cunice S.A.S.</h1>
+        <h1>Bienvenidos a Cunice S.A.S.</h1>
+        <p>Su aliado en asesoramiento empresarial y capacitación</p>
     </header>
 
-    <!-- Barra de navegación -->
-    <nav>
-        <a href="#vision">Visión y Misión</a>
-        <a href="#servicios">Portafolio de Servicios</a>
-        <a href="#banner">Banner Publicitario</a>
-        <a href="#integrantes">Integrantes</a>
-    </nav>
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Sección Nosotros -->
+        <section id="nosotros">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Sobre Nosotros</h2>
+                    <p>Cunice S.A.S. es una empresa dedicada a proporcionar asesoramiento gerencial y capacitaciones para optimizar procesos administrativos. Ubicada en Bogotá, ayudamos a empresas de todos los tamaños a mejorar su eficiencia y productividad.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="ruta-de-tu-imagen.jpg" class="img-fluid" alt="Cunice S.A.S.">
+                </div>
+            </div>
+        </section>
 
-    <!-- Sección de Visión y Misión -->
-    <section id="vision">
-        <h2>VISIÓN Y MISIÓN</h2>
-        <p><strong>Visión:</strong> Ser la empresa líder en asesoramiento gerencial en Colombia, reconocida por su enfoque personalizado y su compromiso con el desarrollo integral de los procesos administrativos y el crecimiento de los equipos humanos.</p>
-        <p><strong>Misión:</strong> Ofrecer servicios de consultoría y capacitación gerencial, proporcionando soluciones estratégicas que mejoren la eficiencia y productividad de nuestros clientes, adaptándonos a sus necesidades particulares.</p>
-    </section>
+        <!-- Sección Servicios -->
+        <section id="servicios" class="bg-light">
+            <div class="container">
+                <h2>Servicios</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>Asesoramiento Gerencial</h3>
+                        <p>Brindamos soluciones estratégicas para mejorar la toma de decisiones en su empresa.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Capacitaciones para Personal</h3>
+                        <p>Ofrecemos capacitaciones en inducción, reinducción y desarrollo de competencias.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Mejora de Procesos Administrativos</h3>
+                        <p>Optimizamos los procesos clave para aumentar la eficiencia y el rendimiento.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Sección del Portafolio de Servicios -->
-    <section id="servicios">
-        <h2>PORTAFOLIO DE SERVICIOS</h2>
-        <ul>
-            <li>Asesoramiento gerencial</li>
-            <li>Capacitación y reinducción de personal</li>
-            <li>Optimización de procesos administrativos</li>
-            <li>Mejoramiento continuo</li>
-        </ul>
-    </section>
+        <!-- Sección Contacto -->
+        <section id="contacto">
+            <div class="container">
+                <h2>Contáctenos</h2>
+                <form action="https://formspree.io/f/{your-form-id}" method="POST">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" name="_replyto" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" name="message" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
-    <!-- Sección del Banner Publicitario -->
-    <section id="banner" class="banner">
-        <h2>BANNER PUBLICITARIO</h2>
-        <img src="cun.png" alt="Promoción Capacitación Gerencial" style="width:100%; height:auto; border-radius: 10px;">
-        <p>Capacitación gerencial diseñada para mejorar el rendimiento y la productividad de tu equipo. ¡Inscríbete hoy!</p>
-    </section>
-
-    <!-- Sección de Integrantes -->
-    <section id="integrantes">
-        <h2>INTEGRANTES</h2>
-        <ul>
-            <li>ESTUDIANTE: HERNAN ROSENDO CASTRO GALEANO INFORMATICA Y CONVERGENCIA TECNOLOGICA/52215/SEGUNDO BLOQUE/24V04 - Rol</li>
-        </ul>
-    </section>
-
-    <!-- Pie de página -->
+    <!-- Footer -->
     <footer>
-        Cunice S.A.S. | Calle 17 con carrera 4ta, Bogotá
+        <p>&copy; 2024 Cunice S.A.S. Todos los derechos reservados.</p>
     </footer>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
