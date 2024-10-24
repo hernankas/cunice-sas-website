@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -46,8 +46,15 @@
         }
         /* Ajustes para imágenes */
         #nosotros img {
-            max-width: 100%; /* Asegura que la imagen ocupe el ancho disponible */
+            width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
             height: auto; /* Mantiene la proporción de la imagen */
+            display: block; /* Asegura que no haya espacio adicional alrededor de la imagen */
+        }
+        /* Ajuste para la columna de texto */
+        #nosotros .col-md-6:first-child {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
     </style>
 </head>
@@ -180,3 +187,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
