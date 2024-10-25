@@ -14,61 +14,37 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            background-image: url('fondo2.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            margin: 0;
-            padding: 0;
-            color: blue; /* Texto en azul por defecto */
         }
         header {
-            background: none;
-            color: blue; /* Texto en azul en el header */
+            background-color: #007bff;
+            color: white;
             padding: 20px;
             text-align: center;
         }
         section {
-            padding: 40px 20px;
-            background: none;
-            border-radius: 0;
-            margin: 20px auto;
-            max-width: 1200px;
-            box-shadow: none;
+            padding: 40px 0;
         }
         footer {
-            background: none;
-            color: blue; /* Texto en azul en el footer */
+            background-color: #343a40;
+            color: white;
             padding: 10px;
             text-align: center;
-            box-shadow: none;
         }
         .btn-primary {
             background-color: #007bff;
             border: none;
         }
         .navbar {
-            background: none;
-            color: blue; /* Enlaces de la barra en azul */
-        }
-        .navbar a {
-            color: blue;
-        }
-        .navbar .nav-link.active {
-            color: black; /* Cambia a negro cuando una pestaña esté activa */
-        }
-        .navbar .nav-link:hover {
-            color: black; /* Cambia a negro al pasar el cursor */
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#" style="color:blue;">Cunice S.A.S.</a>
+            <a class="navbar-brand" href="#">Cunice S.A.S.</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -102,15 +78,18 @@
         <!-- Sección Nosotros -->
         <section id="nosotros">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-6">
                     <h2>Sobre Nosotros</h2>
                     <p>Cunice S.A.S. es una empresa dedicada a proporcionar asesoramiento gerencial y capacitaciones para optimizar procesos administrativos. Ubicada en Bogotá, ayudamos a empresas de todos los tamaños a mejorar su eficiencia y productividad.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="cun.png" class="img-fluid" alt="Logo de Cunice S.A.S.">
                 </div>
             </div>
         </section>
 
         <!-- Sección Servicios -->
-        <section id="servicios">
+        <section id="servicios" class="bg-light">
             <div class="container">
                 <h2>Servicios</h2>
                 <div class="row">
@@ -134,7 +113,7 @@
         <section id="integrantes">
             <div class="container">
                 <h2>Integrantes</h2>
-                <table class="table table-bordered" style="color: blue;">
+                <table class="table table-bordered">
                     <thead>
                         <tr>
                             <th>Nombre Completo</th>
@@ -188,6 +167,5 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>
-
+            </html>
 
